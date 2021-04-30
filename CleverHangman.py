@@ -192,9 +192,6 @@ def runGame(filename): #modify
 
 
 if __name__ == "__main__":
-    '''
-    Running Hangman.py should start the game, which is done by calling runGame, therefore, we have provided you this code below.
-    '''
     result = runGame('lowerwords.txt')
     wins = 0
     losses = 0
@@ -211,9 +208,3 @@ if __name__ == "__main__":
             losses += 1
         again = input('Do you want to play again? y or n>')
     print('You won ' + str(wins) + ' game(s) and lost ' + str(losses))
-
-    # currTemplate = '____'
-    # letterGuess = 'o'
-    # wordList = ['oboe', 'noon', 'odor', 'room', 'solo', 'trio', 'goto', 'oath', 'oxen', 'pick', 'frat', 'hoop']
-    # debug = True
-    # print(getNewWordList(currTemplate, letterGuess, wordList, debug))
